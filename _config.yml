@@ -1,0 +1,104 @@
+# ---
+title: 生命不止运动不息
+description: 获得惊人成绩的唯一途径，就是重复每一个小步骤！
+# locale: zh
+email: "billsmiless@126.com"
+
+
+baseurl: "/smiles"
+url: "http://dosedo.gitee.io/smiles"
+social:
+  github: "dosedo"
+  # twitter: "icily0719"
+  # codepen: "erlzhang"
+
+# Theme Settings
+logo: "/smiles/img/logo.svg"
+rss: "/feed.xml"
+
+theme_setting:
+  # blog_page: "blog/index.md"
+  # blog_page: "smiles/index.md"
+  about_page: "about.md"
+#   # archive_page: "archive.md"
+  nav_pages:
+     - "about.md"
+     # title: "关于"
+     # url: "http//:www.baidu.com"
+    # - "archive.md"
+      # title: "关于"
+  lang:
+    category_all: "全部"
+    blog_title: "博客"
+    comment:
+      user: "昵称"
+      email: "邮箱"
+      url: "链接"
+      message: "说点什么吧..."
+      reply: "回复"
+comment:
+  enabled: true
+  provider: "static"
+  static:
+    postUrl: "https://jekyll-comment-server.herokuapp.com/post-comment"
+    # postUrl: "https://g4vdkkahpjie.leanapp.cn/post-comment"
+smiley:
+  enabled: true
+head_code: |
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3176e6e675ed7773f831e38c7a57880f";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+# Jekyll Settings
+markdown: kramdown
+# permalink: /blog/:title:output_ext
+permalink: /:title:output_ext
+timezone: Asia/Shanghai
+excerpt_separator: <!--more-->
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      keywords: ios学习，旅行，努力，博客，dosedo, billsmiless
+      description: 知识，只有写下来才会成为自己的，文字像酒，越陈越香。
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      toc: true
+# plugins:
+#   # - jekyll-feed
+#   # - jekyll-sitemap
+#   # - jekyll-books
+#   #- jekyll-img-prefix
+#   - jekyll-smiley
+#   - jekyll-toc
+#   - jekyll-deploy-oss
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+#   - README.md
+#   - scripts/
+# deploy:
+#   endpoint: "oss-cn-hongkong.aliyuncs.com"
+#   bucket_name: "erlim"
+#   expired_in: 1
+#   paths:
+#     - blog
+#     - feed.xml
+#     - sitemap.xml
